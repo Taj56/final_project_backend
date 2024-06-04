@@ -25,8 +25,7 @@ export const registerUser = async (req, res, next)=>{
     const sqlQuery = `
     insert into users  (email, password, first_name, last_name, role, last_login, status)
     values(?,?,?,?,?,?,?)
-    `
-
+    `;
     const data = req.body;
     const vRole = 'USER';
     const vStatus = 'ACTV';
